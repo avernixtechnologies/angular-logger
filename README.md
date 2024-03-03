@@ -37,8 +37,9 @@ import { log } from '@trarn/angular-logger';
 | `debug`      | `method` | Accepts two properties; message and data. Again, data can be an object, array, etc. |
 | `error`      | `method` | Accepts two properties; message and data. Again, data can be an object, array, etc. |
 | `warn`      | `method` | Accepts two properties; message and data. Again, data can be an object, array, etc. |
-| `group`      | `method` | Accepts two properties; message and data. Again, data can be an object, array, etc. |
-| `groupEnd`      | `method` | Accepts two properties; message and data. Again, data can be an object, array, etc. |
+| `assert`      | `method` | Accepts an assertion group and a message/object. Acts as a standard console.assert |
+| `group`      | `method` | Starts a console group |
+| `groupEnd`      | `method` | Ends the above mentioned "group" |
 | `Observable`      | `method` | Interacts as an angular Observable |
 
 
