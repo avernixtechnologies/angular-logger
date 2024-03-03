@@ -1,19 +1,49 @@
 {
-  "name": "@trarn/angular-logger",
-  "version": "1.0.0",
-  "description": "A logger built with angular in mind",
-  "main": "index.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Avernix Technologies",
-  "license": "MIT",
-  "dependencies": {
-    "prettier": "^3.2.5",
-    "rxjs": "^7.8.1"
-  },
-  "devDependencies": {
-    "@types/node": "^20.11.20",
-    "typescript": "^5.3.3"
-  }
+    "name": "@trarn/angular-logger",
+    "version": "1.0.0",
+    "description": "A logger built with angular in mind",
+    "type": "module",
+    "types": "build/index.d.ts",
+    "main": "build/index.js",
+    "files": [
+        "build",
+        "README.md",
+        "LICENSE",
+        "package.json",
+        "index.ts"
+    ],
+    "scripts": {
+        "compile": "tsc -b ./tsconfig.cjs.json ./tsconfig.esm.json ./tsconfig.types.json && node rename-script.cjs",
+        "pub": "npm publish --access=public",
+        "build": "tsc",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "exports": {
+        "types": "./build/types/index.d.ts",
+        "require": "./build/cjs/index.cjs",
+        "import": "./build/esm/index.js",
+        "default": "./build/esm/index.js"
+    },
+    "author": "Avernix Technologies",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/avernixtechnologies/angular-logger.git"
+    },
+    "keywords": [
+        "logger",
+        "angular"
+    ],
+    "bugs": {
+        "url": "https://github.com/avernixtechnologies/angular-logger/issues"
+    },
+    "homepage": "https://avernix.com",
+    "license": "MIT",
+    "dependencies": {
+        "prettier": "^3.2.5",
+        "rxjs": "^7.8.1"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.20",
+        "typescript": "^5.3.3"
+    }
 }
