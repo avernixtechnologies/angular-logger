@@ -1,6 +1,6 @@
 {
     "name": "@trarn/angular-logger",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A logger built with angular in mind",
     "type": "module",
     "types": "build/index.d.ts",
@@ -16,7 +16,7 @@
         "compile": "tsc -b ./tsconfig.cjs.json ./tsconfig.esm.json ./tsconfig.types.json && node rename-script.cjs",
         "pub": "npm publish --access=public",
         "build": "tsc",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\""
     },
     "exports": {
         "types": "./build/types/index.d.ts",
