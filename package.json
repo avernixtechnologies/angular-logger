@@ -1,10 +1,10 @@
 {
     "name": "@trarn/angular-logger",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "A logger built with angular in mind",
     "type": "module",
     "types": "build/index.d.ts",
-    "main": "build/index.js",
+    "main": "index.ts",
     "files": [
         "build",
         "README.md",

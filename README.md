@@ -40,7 +40,7 @@ import { log } from '@trarn/angular-logger';
 | `assert`      | `method` | Accepts an assertion group and a message/object. Acts as a standard console.assert |
 | `group`      | `method` | Starts a console group |
 | `groupEnd`      | `method` | Ends the above mentioned "group" |
-| `Observable`      | `method` | Interacts as an angular Observable |
+| `Observable`      | `method` | Interacts with/as an angular Observable, accepts an Observable and a name |
 
 
 -- -
